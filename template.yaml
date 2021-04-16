@@ -18,10 +18,13 @@ Resources:
       Handler: lambda.execution_handler
       Runtime: python3.8
       PackageType: Zip
+      Timeout: 60
       Environment:
         Variables:
           QUOTE_ROOT_URL: quote-api-url
           AUTH_TOKEN: auth-token
+          PRODUCT_NAME: BriteQuote
+          DEPLOYMENT_STAGE: sandbox
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
