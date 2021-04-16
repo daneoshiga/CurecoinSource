@@ -1,7 +1,8 @@
 from simple_rest_client.api import API
 
+from execution_engine.settings import settings
+
 from . import resources
-from .settings import settings
 
 
 def get_api_instance(timeout=None):

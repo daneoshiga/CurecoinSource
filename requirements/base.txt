@@ -36,10 +36,12 @@ jmespath==0.10.0
     # via
     #   boto3
     #   botocore
-pydantic==1.8.1
+pydantic[dotenv]==1.8.1
     # via -r requirements/base.in
 python-dateutil==2.8.1
     # via botocore
+python-dotenv==0.17.0
+    # via pydantic
 python-slugify==4.0.1
     # via simple-rest-client
 python-status==1.0.1
